@@ -1,0 +1,72 @@
+/* 
+Globals
+	Sass variable, mixins, plugins, etc. that are used throughout the entore site.
+*/
+
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin fontSize($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+// Site variable
+$color: #6a6767;
+$background-color: #fcfcfc;
+$header-color: #62f2fd;
+
+
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin body-font-regular {
+    font-family: "old-standard",serif;
+    font-style: normal;
+    font-weight: 400;
+}
+    
+@mixin body-font-italic {
+    font-family: "old-standard",serif;
+    font-style: italic;
+    font-weight: 400;
+}
+    
+@mixin body-font-bold {
+    font-family: "old-standard",serif;
+    font-style: normal;
+    font-weight: 700;
+}
+    
+@mixin headline-font {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Righteous'), local('Righteous-Regular'), url(http://fonts.gstatic.com/s/righteous/v5/w5P-SI7QJQSDqB3GziL8XbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+    background: {
+        image: url($imgpath);
+        position: $position;
+        repeat: $repeat;
+    }
+}
+.testing {
+    @include background('/img/background-vormgevers_detail.jpg');
+}
+
+//@keyframes colorchange-background {
+  //  0% { background-color: $background-color;}
+   // 50% { background-color: $background-color-alternate;}
+    //100% { background-color: $background-color;}
+//}
+
+//@keyframes colorchange-font {
+  //  0% { color: $background-color;}
+    //50% { color: $background-color-alternate;}
+    //100% { color: $background-color;}
+//}
