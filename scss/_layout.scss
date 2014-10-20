@@ -4,73 +4,19 @@ Layout Rules
     Layout styles can also be divided into major and minor styles based on reuse. Major layout styles such as header and footer are traditionally styled using ID selectors but take the time to think about the elements that are common across all components of the page and use class selectors where appropriate.
 */
 
-nav[role="navigation"] {
-    text-align: right;
-    height: 10%;
-    margin: 15px;
-    display: inline;
-}
-
-//nav[role="navigation"] ul, .contact ul {
-  //  list-style-type: none;
-    //margin: 0; 
-    //padding: 0;
-//}
-
-//nav[role="navigation"] ul {
-  //  margin-top: 12px;
-//}
-
-//nav[role="navigation"] ul li, .contact ul li {
-//    display: inline-block;
-  //  margin: 0;
-    //padding: 0;
-//}
-
 header[role="banner"]{
     margin: 30px 0 100px 0;
-    @media (min-width: 700px) {
-        float: left;
-        width: 35%;
-    }
+    
 }
 
 .banner-photo {
     text-align: center;   
 }
 
-main[role="main"] {
-    @media (min-width: 500px) {
-        float: right;
-        width: 50%;
-       margin-top: 30px;
-        
-    }
-
-}
-
-footer[role="contentinfo"] {
-    @media (min-width: 700px) {
-        float: left;
-        width: 100%;
-        display: inline;
-        //text-align: center;
-    }
-
-}
-
-//.contact svg {
-    //width: 24px;
-    //height: 24px;
-//}
 
 a:hover svg path {
-fill: red;
+fill: aqua;
 transition: fill 400ms linear;
 }
 
-//.contact a:hover svg path{
-  //  fill: darken($background-color, 12%);
-    //transition: fill 400ms linear;
-//}
 

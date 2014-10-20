@@ -18,9 +18,9 @@ body {
     @include fontSize(14px);
     padding: 0 8px;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 500px;
     width: 100%;
-    line-height: 1.2;
+    line-height: 1;
     
 }
 
@@ -41,16 +41,20 @@ img {
 }
 
 cite {
+text-align: center;
 @include fontSize(15px);
+@include body-font-italic;
+color: $background-color;
 }
 
 blockquote {
       //background-color: $blockquote-color;
     //color: $blockquote-font-color;
-    border-top: 3px $color solid;
-    border-bottom: 3px $color solid;
+    border-top: 3px aqua solid;
+    border-bottom: 3px aqua solid;
     padding: 16px;
     margin: 0;
     @include fontSize(20px);  
+    @include body-font-italic;
 
 }

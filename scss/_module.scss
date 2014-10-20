@@ -7,17 +7,6 @@ Module Rules
 WHEN YOU ARE WORKING WITH HOW THINGS LOOK
 */
 
-//.toggle-button {
-    
-    //background-color: $color;
-  //  animation: colorchange-font 5s linear 1s infinite alternate;
-    //color:$background-color;
-    //display: inline-block;
-    //@include headline-font;
-    //padding: 0 4px;
-    //text-decoration: none;
-    //width: 10px;
-//}
 
 nav[role="navigation"] ul {
    list-style-type: none;
@@ -25,13 +14,13 @@ nav[role="navigation"] ul {
 }
 
 nav[role="navigation"] ul li svg {
-    max-height: 10%;
-    max-width: 10%;
-    float: right;
-    display: inline;
+    max-height: 17%;
+    max-width: 17%;
+    float: left;
+    //display: inline;
     //position: fixed;
     //margin-top: 100px;
-    margin: 5px;
+    margin-right: 6px;
     
 
 }
@@ -57,10 +46,10 @@ nav[role="navigation"] ul li svg {
 
 header[role="banner"] {
     //animation: colorchange-font 5s linear 1s infinite alternate;
-    background-color: $header-color;
+    background-color: $color;
     color: $color;
     padding: 15px;
-    float: left;
+    //float: center;
     margin: 0;
     
 }
@@ -71,27 +60,11 @@ header[role="banner"] h1 {
 }
 
 header[role="banner"] img {
-    border-radius: 10%;
-    width: 100%;
+    border-radius: 50%;
+    width: 50%;
+    padding-top: 60px;
 }
 
-.john {
-text-align: center;
-}
-
-.john img {
-    
-    border-radius: 30%;
-    max-width:50%;
-    text-align: center;
-    //margin: 0;
-    //padding-left: 150px;
-    
-}
-
-header[role="banner"] p {
-    @include fontSize(16px);
-}
 
 header[role="banner"] a {
     color: $background-color;
@@ -105,30 +78,16 @@ header[role="banner"] a:hover {
 }
 
 main[role="main"] {
-    margin-top: 40px;
+    margin-top: 60px;
     margin: 15px;
 }
 
-//.contact svg path{
-  //  fill: $background-color;
-    //transition: fill 400ms linear;
-//}
-
-//.contact a:hover svg path{
-  //  fill: darken($background-color, 12%);
-    //transition: fill 400ms linear;
-//}
-
-//main[role="main"] h1 {
-  //  background-color: $color;
-    //color: $background-color;
-    //animation: colorchange-font 5s linear 1s infinite alternate;
-    //padding: 0 8px;
-//}
-
 footer[role="contentinfo"] {
     //animation: colorchange-font 5s linear 1s infinite alternate;
+    background-color: aqua;
     @include body-font-italic;
     line-height: 1;
-    padding: 4px 8px 8px 8px;
+    padding: 10px;
+    text-align: center;
+    
 }

@@ -18,7 +18,7 @@ Globals
 // Site variable
 $color: #6a6767;
 $background-color: #fcfcfc;
-$header-color: #62f2fd;
+$header-color: #ff0009;
 
 
 
@@ -42,22 +42,12 @@ $header-color: #62f2fd;
 }
     
 @mixin headline-font {
-  font-family: 'Righteous';
+  font-family: 'Sigmar One';
   font-style: normal;
   font-weight: 400;
-  src: local('Righteous'), local('Righteous-Regular'), url(http://fonts.gstatic.com/s/righteous/v5/w5P-SI7QJQSDqB3GziL8XbO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+  src: local('Sigmar One'), local('SigmarOne'), url(http://fonts.gstatic.com/s/sigmarone/v6/aRAZJs6CY7SV6eSg6Wx4j73hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
 }
 
-@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
-    background: {
-        image: url($imgpath);
-        position: $position;
-        repeat: $repeat;
-    }
-}
-.testing {
-    @include background('/img/background-vormgevers_detail.jpg');
-}
 
 //@keyframes colorchange-background {
   //  0% { background-color: $background-color;}
